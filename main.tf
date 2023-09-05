@@ -25,6 +25,7 @@ module "deployment" {
   pub_subnet_name     = "db12_pub_sbnt"
   pub_sbnt_add_pref   = ["10.0.3.0/16"]
   aks_name            = "db12-AKS"
+  dns_prefix          = "aks-db12"
   node_count          = 2
   vm_size             = "Standard_D2_v2"
 }
