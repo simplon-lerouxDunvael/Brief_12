@@ -4,7 +4,7 @@ provider "azurerm" {
   features {}
 }
 
-# Utilisation du module réseau
+# Utilisation du module
 module "deployment" {
   source = "git::https://github.com/simplon-lerouxDunvael/Brief_12bis"
   
