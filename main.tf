@@ -6,7 +6,7 @@ provider "azurerm" {
 
 # Utilisation du module réseau
 module "deployment" {
-  source = "https://github.com/simplon-lerouxDunvael/Brief_12Bis.git"
+  source = "git::https://github.com/simplon-lerouxDunvael/Brief_12bis.git"
   
   aks_name            = "db12-AKS"
   resource_group_name = "myResourceGroup"
