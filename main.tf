@@ -15,7 +15,7 @@ module "deployment" {
   subnet1_name        = "db12-sbnt"
   subnet1_prefix      = "10.0.1.0/16"
   gateway_name        = "db12_gateway"
-  sku_name            = "Static"
+  /* sku_name            = "Static" */
   pubIP_gateway_name  = "db12_gateway_pubIP"
   pubIP_allocation    = "Static"
   pubIP_sku           = "Standard"
