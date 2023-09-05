@@ -27,7 +27,4 @@ module "deployment" {
   node_count          = "2"
   vm_size             = "Standard_D2_v2"
   vnet_subnet_id      = module.deployment.subnet1_id
-  identity            = "SystemAssigned"
-  tags                = "dev"
-
 }
