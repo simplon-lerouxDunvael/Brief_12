@@ -8,12 +8,12 @@ provider "azurerm" {
 module "deployment" {
   source = "git::https://github.com/simplon-lerouxDunvael/Brief_12bis"
   
-  resource_group_name = "myResourceGroup"
-  location            = "eastus"
-  vnet_name           = "myVNet"
+  resource_group_name = "db12-rg"
+  location            = "francecentral"
+  vnet_name           = "db12-vnet"
   address_space       = "10.0.0.0/16"
-  subnet_name         = "mySubnet"
-  subnet_prefix       = "10.0.1.0/24"
+  subnet1_name        = "db12-sbnt"
+  subnet1_prefix      = "10.0.1.0/16"
   gateway_name        = "db12_gateway"
   pubIP_gateway_name  = "db12_gateway_pubIP"
   pubIP_allocation    = "Static"
@@ -26,5 +26,5 @@ module "deployment" {
   aks_name            = "db12-AKS"
   node_count          = 2
   vm_size             = "Standard_D2_v2"
-  vnet_subnet_id      = module.deployment.subnet1_id
+  vnet_subnet1_id      = module.deployment.subnet1_id
 }
