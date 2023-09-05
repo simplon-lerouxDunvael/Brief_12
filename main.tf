@@ -20,7 +20,7 @@ module "deployment" {
   resource_group_name = "db12-rg"
   location            = "francecentral"
   vnet_name           = "db12-vnet"
-  address_space       = ["10.0.0.0/16"]
+  address_space       = ["10.6.0.0/16"]
   subnet1_name        = "db12-sbnt"
   subnet1_prefix      = ["10.6.1.0/24"]
   gateway_name        = "db12_gateway"
