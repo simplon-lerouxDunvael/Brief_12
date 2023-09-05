@@ -1,5 +1,14 @@
 # Fichier faisant appel aux modules et qui déploie le cluster AKS
 
+terraform {
+ required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~>2.0"
+    }
+  }
+}
+
 provider "azurerm" {
   features {}
 }
