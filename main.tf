@@ -6,7 +6,7 @@ provider "azurerm" {
 
 # Utilisation du module
 module "deployment" {
-  source = "git::https://github.com/simplon-lerouxDunvael/Brief_12bis"
+  source = "git::https://github.com/simplon-lerouxDunvael/Brief_12Ter"
   
   resource_group_name = "db12-rg"
   location            = "francecentral"
