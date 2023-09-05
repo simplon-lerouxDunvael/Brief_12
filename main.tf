@@ -18,7 +18,7 @@ module "deployment" {
   pubIP_gateway_name  = "db12_gateway_pubIP"
   pubIP_allocation    = "Static"
   pubIP_sku           = "Standard"
-  routeTab_name       = "Standard"
+  routeTab_name       = "db12_routeTab"
   priv_subnet_name    = "db12_priv_sbnt"
   priv_sbnt_add_pref  = "10.0.2.0/16"
   pub_subnet_name     = "db12_pub_sbnt"
@@ -26,7 +26,7 @@ module "deployment" {
   aks_name            = "db12-AKS"
   node_count          = "2"
   vm_size             = "Standard_D2_v2"
-  vnet_subnet_id      = module.deployment.subnet_id
+  vnet_subnet_id      = module.deployment.subnet1_id
   identity            = "SystemAssigned"
   tags                = "dev"
 
