@@ -24,7 +24,6 @@ module "deployment" {
   subnet1_name        = "db12-sbnt"
   subnet1_prefix      = ["10.0.1.0/24"]
   gateway_name        = "db12_gateway"
-  /* sku_name            = "Static" */
   pubIP_gateway_name  = "db12_gateway_pubIP"
   pubIP_allocation    = "Static"
   pubIP_sku           = "Standard"
@@ -35,6 +34,7 @@ module "deployment" {
   pub_sbnt_add_pref   = ["10.0.3.0/24"]
   aks_name            = "db12-AKS"
   dns_prefix          = "aks-db12"
+  node_pool_name      = "db12pool"
   node_count          = 2
   vm_size             = "Standard_D2_v2"
 }
