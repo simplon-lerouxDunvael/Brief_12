@@ -27,7 +27,7 @@ module "deployment" {
   pubIP_gateway_name  = "db12_gateway_pubIP"
   pubIP_allocation    = "Static"
   pubIP_sku           = "Standard"
-  routeTab_name       = "db12_routeTab"
+  /* routeTab_name       = "db12_routeTab" */
   priv_subnet_name    = "db12_priv_sbnt"
   priv_sbnt_add_pref  = ["10.6.2.0/24"]
   pub_subnet_name     = "db12_pub_sbnt"
